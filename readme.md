@@ -23,3 +23,17 @@ docker run -it rendra/simple-backend cat /etc/os-release
 
 gh repo create docker-simple
 gh repo view -w
+
+### docker-compose
+docker-compose build
+
+docker-compose up -d mongo
+
+### display logs
+docker logs [container-id] -> `docker logs 8c63`
+
+### run app container
+docker-compose up -d app
+
+### stop docker compose
+docker-compose stop
