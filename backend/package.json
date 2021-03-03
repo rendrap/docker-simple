@@ -1,18 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Simple node and express backend",
+  "description": "Node, Express and Mongo backend",
   "main": "index.js",
-  "repository": "github:mannyhenri/node-docker",
+  "repository": "github:mannyhenri/node-mongo-docker",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./index.js --exec babel-node -e js"
   },
-  "author": "",
+  "author": "Emmanuel Henri",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
-    "mongodb": "^3.1.6",
-    "nodemon": "^1.18.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^4.13.18",
+    "nodemon": "^1.18.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
