@@ -37,3 +37,17 @@ docker-compose up -d app
 
 ### stop docker compose
 docker-compose stop
+
+---
+Frontend
+### build frontend image
+docker build -t rendra/frontend .
+
+### delete image
+docker rmi [IMAGE-ID]
+
+### run image
+docker run -p 3000:3000 rendra/frontend
+
+### stop container
+docker stop [id xxxx]
