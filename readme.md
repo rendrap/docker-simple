@@ -45,9 +45,12 @@ docker build -t rendra/frontend .
 
 ### delete image
 docker rmi [IMAGE-ID]
-
+ 
 ### run image
 docker run -p 3000:3000 rendra/frontend
 
 ### stop container
 docker stop [id xxxx]
+
+### pull images from docker hub
+docker pull ruby:2.7.2
