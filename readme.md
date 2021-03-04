@@ -54,3 +54,22 @@ docker stop [id xxxx]
 
 ### pull images from docker hub
 docker pull ruby:2.7.2
+
+### delete un-used volumes
+docker system prune -a --volumes
+or 
+docker system prune --volumes
+
+## up
+docker-compose up
+
+### check disk usage
+docker system df
+
+## up
+docker-compose up -d mongo
+### down, delete volume
+docker-compose down -v
+
+### list docker volume
+docker volume ls
