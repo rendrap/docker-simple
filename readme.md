@@ -76,3 +76,7 @@ docker volume ls
 
 ### usefull links
 https://www.codenotary.com/blog/extremely-useful-docker-commands/
+
+---
+### docker workflow
+https://karlcode.owtelse.com/blog/2017/01/25/push-a-docker-image-to-personal-repository/ 

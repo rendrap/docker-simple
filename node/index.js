@@ -6,8 +6,8 @@ const app = express();
 const PORT = 4000;
 const client = mongodb.MongoClient;
 
-client.connect(config.DB, { useNewUrlParser: true }, (err, db) => { 
-    if(err) {
+client.connect(config.DB, { useNewUrlParser: true }, (err, db) => {
+    if (err) {
         console.log('database is not connected')
     }
     else {
@@ -16,9 +16,9 @@ client.connect(config.DB, { useNewUrlParser: true }, (err, db) => {
 });
 
 app.get('/', (req, res) => {
-    res.json("I love docker!");
+    res.json("I love docker!, build success");
 });
 
 app.listen(PORT, () => {
-    console.log('Your server is running on PORT:',PORT);
+    console.log('Your server is running on PORT:', PORT);
 });
